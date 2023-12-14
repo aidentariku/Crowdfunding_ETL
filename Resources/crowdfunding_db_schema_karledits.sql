@@ -16,16 +16,16 @@ CREATE TABLE campaigns (
 );
 
 CREATE TABLE category (
-    category_id varchar(10) NOT NULL,
-    category_name varchar(50) NOT NULL,
+    category_id VARCHAR(10) NOT NULL,
+    category_name VARCHAR(50) NOT NULL,
     CONSTRAINT pk_category PRIMARY KEY (
         category_id
      )
 );
 
 CREATE TABLE subcategory (
-    subcategory_id varchar(10) NOT NULL,
-    subcategory_name varchar(50) NOT NULL,
+    subcategory_id VARCHAR(10) NOT NULL,
+    subcategory_name VARCHAR(50) NOT NULL,
     CONSTRAINT pk_subcategory PRIMARY KEY (
         subcategory_id
      )
@@ -33,9 +33,9 @@ CREATE TABLE subcategory (
 
 CREATE TABLE contacts (
     contact_id int NOT NULL,
-    first_name varchar(50) NOT NULL,
-    last_name varchar(50) NOT NULL,
-    email varchar(100) NOT NULL,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL,
     CONSTRAINT pk_contacts PRIMARY KEY (
         contact_id
      )
